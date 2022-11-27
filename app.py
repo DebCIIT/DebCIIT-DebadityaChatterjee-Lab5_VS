@@ -6,7 +6,7 @@ import sklearn
 from sqlalchemy import true
 
 #Initialize the flask App
-app=Flask(__name__)
+app=Flask(__name__,template_folder='templates')
 # loading the trained model  
 model=pickle.load(open('model.pkl','rb'))
 
